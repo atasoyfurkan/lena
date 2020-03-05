@@ -12,6 +12,35 @@ img {
 }
 
 /*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+.border-radius {
+  border-radius: 20px;
+}
+.border-radius-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.border-radius-bottom {
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+.section-margin {
+  margin-top: 120px;
+}
+.section-padding {
+  padding-top: 110px;
+}
+@media screen and (max-width: 768px) {
+  .section-margin {
+    margin-top: 90px;
+  }
+  .section-padding {
+    padding-top: 80px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
 a {
@@ -41,10 +70,6 @@ a:active {
 /*--------------------------------------------------------------
 # Site Header
 --------------------------------------------------------------*/
-.site-header {
-  position: relative;
-}
-
 .nav-bar {
   top: 0;
   left: 0;
@@ -218,28 +243,20 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-.hero-slider {
-  max-height: 950px;
-}
 
-.hero-content-wrap {
-  min-height: 500px;
-  position: relative;
+.home-section {
   color: #fff;
 
-  margin-top: 120px;
+  min-height: 500px;
 
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top right 25%;
+  background-position: top right 10%;
 }
 
-.hero-content-overlay {
-}
-
-.hero-content-overlay h1 {
+.home-section h1 {
   margin: 0;
   font-size: 60px;
   font-weight: 600;
@@ -247,54 +264,65 @@ a:active {
   color: #404040;
 }
 
-.hero-content-overlay p {
+.home-section p {
   font-size: 14px;
   font-weight: 500;
   line-height: 2;
   color: #5f5f5f;
 }
 
-.hero-slider .pagination-wrap {
-  top: 50%;
-  left: 0;
-  z-index: 99;
-  width: 120px;
-  margin-top: -60px;
-}
-
-.hero-slider .swiper-pagination-bullet {
-  width: 120px;
-  height: 28px;
-  margin-bottom: 12px;
-  border-radius: 0;
-  border-bottom: 2px solid transparent;
-  font-size: 16px;
-  font-weight: 600;
-  color: #aaaaaa;
-  background: transparent;
-  opacity: 1;
-  text-align: right;
-}
-
-.hero-slider .swiper-pagination-bullet-active {
-  color: #18a3eb;
-  border-color: #18a3eb;
-}
-
-@media screen and (max-width: 1400px) {
-  .hero-slider .swiper-pagination-bullet {
-    width: 60px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .hero-content-wrap {
-    margin-top: 90px;
+  .mobile-overlay {
+    background: rgba(255, 255, 255, 0.6);
   }
-  .hero-content-overlay {
-    background: rgba(230, 230, 230, 0.6);
-    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+# Product Section
+--------------------------------------------------------------*/
+
+.product:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  cursor: pointer;
+}
+
+.product-section h1 {
+  font-size: 53px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #404040;
+}
+
+/*--------------------------------------------------------------
+# Feature Section
+--------------------------------------------------------------*/
+
+.single-feature {
+  background: #f9f9fd;
+  border-radius: 5px;
+  transition: 0.5s;
+  &:hover {
   }
+}
+.single-feature img {
+  margin-bottom: 40px;
+}
+.single-feature:hover {
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.single-feature h3 {
+  color: #222222;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.single-feature p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #777777;
 }
 
 /*--------------------------------------------------------------
@@ -383,6 +411,9 @@ a:active {
   ); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18a3eb', endColorstr='#587de4',GradientType=1 ); /* ie6-9 */
   color: #fff;
+}
+.button.gradient-bg:hover {
+  background: rgba(88, 125, 228, 1);
 }
 
 /*

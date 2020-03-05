@@ -1,6 +1,7 @@
 (function($) {
   // 'use strict';
 
+  // Navbar
   $(window).scroll(function() {
     if ($(this).scrollTop() > 50) {
       $(".nav-bar").addClass("nav-bar-scrolled");
