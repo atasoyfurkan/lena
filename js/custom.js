@@ -1,12 +1,15 @@
 function filter(c) {
-  var x, i;
-  x = document.getElementsByClassName("product-label");
+  let x = document.getElementsByClassName("product-label");
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
+  for (let i = 0; i < x.length; i++) {
     addClass(x[i], "d-none");
     if (x[i].className.indexOf(c) > -1) removeClass(x[i], "d-none");
   }
+}
+function pagination() {
+  let x = document.getElementsByClassName("product-label");
+  console.log(x);
 }
 // Show filtered elements
 function addClass(element, name) {
@@ -43,6 +46,18 @@ if (btnContainer) {
   }
 }
 
+// var paginationContainer = document.getElementById("pagination");
+// if (paginationContainer) {
+//   var btns = paginationContainer.getElementsByTagName("a");
+//   for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function() {
+//       var current = document.getElementsByClassName("btn-active");
+//       current[0].className = current[0].className.replace(" btn-active", "");
+//       this.className += " btn-active";
+//     });
+//   }
+// }
+
 (function($) {
   // 'use strict';
 
@@ -63,6 +78,27 @@ if (btnContainer) {
   }
 
   // Products
+
+  let elements = document.getElementsByClassName("product-label");
+  for (let i = 0; i < elements.length; i++) {
+    if (i < 1 * 4 && i >= (1 - 1) * 4) {
+      removeClass(elements[i], "d-none");
+    } else {
+      addClass(elements[i], "d-none");
+    }
+  }
+
+  $(".page-link").on("click", function() {
+    let pageNumber = parseInt($(this).text());
+
+    for (let i = 0; i < elements.length; i++) {
+      if (i < pageNumber * 4 && i >= (pageNumber - 1) * 4) {
+        removeClass(elements[i], "d-none");
+      } else {
+        addClass(elements[i], "d-none");
+      }
+    }
+  });
 
   // Main Navigation
   $(".hamburger-menu").on("click", function() {

@@ -18,3 +18,8 @@ home section altina layer
 
 
 mx-2 
+
+animasyonlar eklenecek 
+    anasayfa
+    filtreleme ekrani
+    

@@ -313,7 +313,7 @@ a:active {
 
 .product-section .btn-active {
   background-color: #29367c !important;
-  color: white;
+  color: white !important;
 }
 
 /*--------------------------------------------------------------
@@ -804,7 +804,7 @@ ul.tabs-nav .tab-nav.active {
   position: relative;
   padding: 32px;
   border-radius: 20px;
-  border: 2px solid #85C1E9;
+  border: 2px solid #85c1e9;
 }
 
 .opening-hours {
