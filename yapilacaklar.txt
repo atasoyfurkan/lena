@@ -16,3 +16,5 @@ home section altina layer
 
 #29367c
 
+
+mx-2 

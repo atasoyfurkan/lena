@@ -7,6 +7,13 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+}
+
 img {
   vertical-align: baseline;
 }
