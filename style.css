@@ -256,6 +256,10 @@ a:active {
   background-position: top right 10%;
 }
 
+.home-section-content {
+  align-items: flex-start !important;
+}
+
 .home-section h1 {
   margin: 0;
   font-size: 60px;
@@ -274,6 +278,13 @@ a:active {
 @media screen and (max-width: 768px) {
   .mobile-overlay {
     background: rgba(255, 255, 255, 0.6);
+  }
+  .home-section-content {
+    align-items: center !important;
+    text-align: center;
+  }
+  .home-section p {
+    text-align: justify;
   }
 }
 

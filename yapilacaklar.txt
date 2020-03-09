@@ -1,12 +1,18 @@
-urunler eklenecek #component bulunacak
+//urunler eklenecek #component bulunacak
 
-subcribe contact a cevrilecek
+//subcribe contact a cevrilecek
 
-about us ayarlanacak #silinecekler ve yazilacaklar
+//about us ayarlanacak #silinecekler ve yazilacaklar
 
-services urunler olacak
+//services urunler olacak
 
 
 navbar mobil sidebar duzenlenecek
 
 //cok kucuk ekranda body kayiyor
+
+
+home section altina layer
+
+#29367c
+
