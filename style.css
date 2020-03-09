@@ -1279,6 +1279,26 @@ ul.tabs-nav .tab-nav.active {
   color: #404040;
 }
 
+.med-history .top-service{
+  display: none;
+}
+
+.med-history .bottom-service{
+ display: flex;
+}
+@media screen and (max-width: 992px) {
+  .med-history{
+    padding: 0px 0;
+  }
+  .med-history .top-service{
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .med-history .bottom-service {
+    display: none!important;
+  }
+}
 .med-history p {
   font-size: 14px;
   color: #828282;
