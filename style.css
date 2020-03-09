@@ -792,11 +792,11 @@ ul.tabs-nav .tab-nav.active {
   position: relative;
   padding: 32px;
   border-radius: 20px;
-  border: 2px solid #29367c;
+  border: 2px solid #dde4ea;
 }
 
 .opening-hours {
-  color: #29367c;
+  border-color: #29367c;
 }
 
 .opening-hours h2,
@@ -825,7 +825,7 @@ ul.tabs-nav .tab-nav.active {
   margin-top: 10px;
   font-size: 16px;
   font-weight: 500;
-  color: #29367c;
+  color: #828282;
 }
 
 .opening-hours ul li span {
