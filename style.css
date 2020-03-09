@@ -313,7 +313,7 @@ a:active {
 
 .product-section .btn-active {
   background-color: #29367c !important;
-  color: white;
+  color: white!important;
 }
 
 /*--------------------------------------------------------------
@@ -1712,7 +1712,7 @@ ul.tabs-nav .tab-nav.active {
 .site-footer {
   position: relative;
   padding: 48px 0;
-  background: url("images/footer-bg.png") no-repeat center #fff;
+  background: url("images/footer-bgB.jpg") no-repeat center #fff;
   background-size: cover;
   font-size: 14px;
   color: #828282;
