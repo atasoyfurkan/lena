@@ -304,6 +304,11 @@ a:active {
   color: #29367c;
 }
 
+.product-section .btn-active {
+  background-color: #29367c !important;
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Feature Section
 --------------------------------------------------------------*/
@@ -792,7 +797,7 @@ ul.tabs-nav .tab-nav.active {
   position: relative;
   padding: 32px;
   border-radius: 20px;
-  border: 2px solid #7B79FF;
+  border: 2px solid #7b79ff;
 }
 
 .opening-hours {
@@ -1279,24 +1284,24 @@ ul.tabs-nav .tab-nav.active {
   color: #404040;
 }
 
-.med-history .top-service{
+.med-history .top-service {
   display: none;
 }
 
-.med-history .bottom-service{
- display: flex;
+.med-history .bottom-service {
+  display: flex;
 }
 @media screen and (max-width: 992px) {
-  .med-history{
+  .med-history {
     padding: 0px 0;
   }
-  .med-history .top-service{
+  .med-history .top-service {
     display: block;
     margin-bottom: 15px;
   }
 
   .med-history .bottom-service {
-    display: none!important;
+    display: none !important;
   }
 }
 .med-history p {
