@@ -288,10 +288,10 @@ a:active {
   }
   .home-section-content {
     align-items: center !important;
-    text-align: center;
+    text-align: center !important;
   }
   .home-section p {
-    text-align: justify;
+    text-align: justify !important;
   }
 }
 
