@@ -298,7 +298,84 @@ a:active {
 /*--------------------------------------------------------------
 # Product Section
 --------------------------------------------------------------*/
+.service-section {
+  position: relative;
+}
 
+.service-section .section-title h3 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.service-section .section-title p {
+  font-size: 15px;
+  line-height: 26px;
+  color: #777777;
+  font-weight: 400;
+}
+
+.service-section .items-container {
+  margin-top: 30px;
+}
+
+.service-section .items-container .slick-prev:before, .service-section .items-container .slick-next:before {
+  font-size: 25px;
+  color: #48bdc5;
+}
+
+.service-section .items-container .item {
+  margin: 10px 20px;
+  outline: 0;
+
+}
+.service-section .items-container .inner-box:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.service-section .inner-box {
+  position: relative;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0 0 20px #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.service-section .inner-box .img_holder img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.service-section .inner-box .image-content {
+  padding: 38px 30px;
+  background: #fff;
+}
+
+.service-section .inner-box .image-content span {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #777777;
+  letter-spacing: .5px;
+}
+
+.service-section .inner-box .image-content h6 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #222222;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.service-section .inner-box .image-content p {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #777777;
+  padding-bottom: 15px;
+}
+
+/*Services */
 .product:hover {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   cursor: pointer;
