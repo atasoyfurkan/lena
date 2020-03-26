@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-family: "Raleway", sans-serif;
+  zoom: 90%;
 }
 
 @media screen and (max-width: 768px) {
@@ -19,7 +20,7 @@ img {
 }
 
 .bg-gray {
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 /*--------------------------------------------------------------
@@ -288,7 +289,7 @@ a:active {
 
 @media screen and (max-width: 768px) {
   .mobile-overlay {
-    background: rgba(0, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
   }
   .home-section-content {
     align-items: center !important;
@@ -384,7 +385,7 @@ a:active {
   outline: 0;
 }
 .service-section .items-container .inner-box:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.400) !important;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4) !important;
 }
 
 .service-section .inner-box {
@@ -392,7 +393,7 @@ a:active {
   border-radius: 5px 5px 0px 0px;
   box-shadow: 0 0 20px #f1f1f1;
   margin-bottom: 20px;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175) !important
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.175) !important;
 }
 
 .service-section .inner-box .img_holder img {
@@ -402,8 +403,7 @@ a:active {
 
 .service-section .inner-box .image-content {
   padding: 38px 30px;
-  background: #FFF;
-
+  background: #fff;
 }
 
 .service-section .inner-box .image-content span {
