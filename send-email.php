@@ -1,5 +1,5 @@
 <?php
-@mail("furkanatasoy65@gmail.com", "deneme", "deneme123333", "From: webmaster@example.com\r\n");
+echo mail("furkanatasoy65@gmail.com", "deneme", "deneme123333", "From: webmaster@example.com\r\n");
 ?>
  
 <!-- include your own success html here -->
