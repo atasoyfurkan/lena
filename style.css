@@ -1714,6 +1714,45 @@ ul.tabs-nav .tab-nav.active {
 }
 
 /*--------------------------------------------------------------
+#Blog
+---------------------------------------------------------------*/
+
+/* Sidebar
+================================================== */
+
+.buttongroup-title {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  border-left: 3px solid #29367c;
+  color: black;
+}
+.buttongroup .btn {
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 8px;
+  border-radius: 0px !important;
+}
+.buttongroup .btn.active {
+  background-color: #29367c;
+  color: white;
+}
+.buttongroup .btn:hover {
+  background-color: #29367c;
+  color: white;
+}
+.blog-title {
+  font-weight: 700;
+  line-height: 36px;
+  color: black;
+  font-size: 28px;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
