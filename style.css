@@ -393,6 +393,127 @@ a:active {
   color: white !important;
 }
 
+/* Hero Slider Segment */
+
+.hero-slider {
+  height: 60vh;
+}
+
+.hero-slider .slider-item {
+  height: 60vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-slider .slider-item:before {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-slider .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-slider .content.style h2 {
+  font-size: 60px;
+}
+
+@media (max-width: 767px) {
+  .hero-slider .content.style h2 {
+    font-size: 30px;
+  }
+}
+
+.hero-slider .content.style .offer-text {
+  letter-spacing: 7px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.hero-slider .content.style .tag-text {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.hero-slider .content.style .btn-main {
+  border-radius: 3px;
+  padding: 16px 50px;
+  font-weight: 700;
+}
+
+.hero-slider .content h2 {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.hero-slider .content p {
+  font-size: 26px;
+  color: #fff;
+}
+
+.hero-slider .content .btn-white {
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all .3s ease;
+}
+
+.hero-slider .content .btn-white:hover {
+  background: #fff;
+  color: #000;
+}
+
+.hero-slider .slick-dots {
+  bottom: 20px;
+}
+
+.hero-slider .slick-dots li {
+  margin: 0 3px;
+}
+
+.hero-slider .slick-dots li button:before {
+  font-size: 15px;
+}
+
+.hero-slider .slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.hero-slider .slick-prev {
+  left: 20px;
+  z-index: 100;
+}
+
+.hero-slider .slick-prev:before {
+  content: '\f177';
+  font-family: "FontAwesome";
+}
+
+.hero-slider .slick-next {
+  right: 20px;
+  z-index: 100;
+}
+
+.hero-slider .slick-next:before {
+  content: '\f178';
+  font-family: "FontAwesome";
+}
+
 /*--------------------------------------------------------------
 # Feature Section
 --------------------------------------------------------------*/
