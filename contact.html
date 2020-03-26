@@ -91,36 +91,37 @@
           </div>
           <div class="contact-form">
             <div class="container">
-              <div class="row">
-                <div class="col-12" style="text-align: center">
-                  <h2>Get in Touch</h2>
+              <form name="contact" method="post" action="send-email.php">
+                <div class="row">
+                  <div class="col-12" style="text-align: center">
+                    <h2>Get in Touch</h2>
+                  </div>
+                  <div class="col-12  col-md-4">
+                    <input name="name" type="text" placeholder="Name" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <input name="email" type="email" placeholder="E-mail" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <input name="subject" type="text" placeholder="Subject" />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      name="message"
+                      rows="12"
+                      cols="80"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="col-12" style="text-align: center">
+                    <input
+                      type="submit"
+                      value="Send Message"
+                      class="button gradient-bg"
+                    />
+                  </div>
                 </div>
-                <div class="col-12  col-md-4">
-                  <input type="text" placeholder="Name" />
-                </div>
-                <div class="col-12 col-md-4">
-                  <input type="email" placeholder="E-mail" />
-                </div>
-                <div class="col-12 col-md-4">
-                  <input type="text" placeholder="Subject" />
-                </div>
-                <div class="col-12">
-                  <textarea
-                    name="name"
-                    rows="12"
-                    cols="80"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div class="col-12" style="text-align: center">
-                  <input
-                    type="submit"
-                    name=""
-                    value="Send Message"
-                    class="button gradient-bg"
-                  />
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
