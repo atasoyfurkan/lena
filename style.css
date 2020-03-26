@@ -1692,6 +1692,13 @@ ul.tabs-nav .tab-nav.active {
 .contact-page-map {
   margin-bottom: 100px;
 }
+.contact-page-map h2 {
+  margin-bottom: 24px;
+  background: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  color: #404040;
+}
 
 .contact-page-map iframe {
   display: block;
