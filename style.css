@@ -489,6 +489,18 @@ a:active {
   .hero-slider .content.style h2 {
     font-size: 30px;
   }
+  .hero-slider .slider-item {
+    text-align: center !important;
+  }
+  .hero-slider .slider-item h2 {
+    text-align: center !important;
+  }
+  .hero-slider .slider-item p {
+    text-align: center !important;
+  }
+  .hero-slider .slider-item a {
+    float: none !important;
+  }
 }
 
 .hero-slider .content.style .offer-text {
