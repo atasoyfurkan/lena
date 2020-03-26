@@ -1,3 +1,10 @@
+function switchProduct() {
+  let elements = document.getElementsByClassName("urun");
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].classList.toggle("is-visible");
+  }
+}
+
 (function($) {
   // 'use strict';
 

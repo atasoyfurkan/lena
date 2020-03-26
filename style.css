@@ -284,7 +284,7 @@ a:active {
 
 @media screen and (max-width: 768px) {
   .mobile-overlay {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 255, 255, 0.6);
   }
   .home-section-content {
     align-items: center !important;
@@ -295,9 +295,60 @@ a:active {
   }
 }
 
+.belge {
+  padding: 30px;
+}
+
+.belge:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # Product Section
 --------------------------------------------------------------*/
+.kalite-belgeleri div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/kalite-belgeleri.jpg);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.kalite-footer overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.kalite-footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.kalite-footer .btn {
+  background-color: #29367c;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 23px;
+  font-weight: 700;
+  border-radius: 15px;
+}
+.kalite-footer .btn:hover {
+  opacity: 0.7;
+}
+.urun {
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.urun.is-visible {
+  opacity: 1;
+  height: auto;
+}
+
 .service-section {
   position: relative;
 }
@@ -1925,6 +1976,10 @@ ul.tabs-nav .tab-nav.active {
   margin-bottom: 30px;
   border-left: 3px solid #29367c;
   color: black;
+}
+.buttongroup-title:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 .buttongroup .btn {
   text-align: left;
