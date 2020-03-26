@@ -1,294 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Hello World</title>
+<html lang="tr">
+<!-- #29367c -->
+<head>
+  <title>Products</title>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="single-page">
-    <!-- NAVBAR -->
-    <div class="nav-bar position-fixed">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-12 d-flex flex-wrap justify-content-between align-items-center"
-          >
-            <div class="site-branding d-flex align-items-center">
-              <a class="d-block" href="index.html" rel="home"
-                ><img
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/custom.js"></script>
+</head>
+<body>
+<!-- NAVBAR -->
+<div class="nav-bar position-fixed">
+  <div class="container">
+    <div class="row">
+      <div
+              class="col-12 d-flex flex-wrap justify-content-between align-items-center"
+      >
+        <div class="site-branding d-flex align-items-center">
+          <a class="d-block" href="index.html" rel="home"
+          ><img
                   class="d-block"
                   src="images/logo.png"
                   alt="logo"
                   width="250pv"
-              /></a>
-            </div>
-            <!-- .site-branding -->
-
-            <nav
-              class="site-navigation d-flex justify-content-end align-items-center"
-            >
-              <ul
-                class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center"
-              >
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li><a href="about.html">About us</a></li>
-                <li class="current-menu-item">
-                  <a href="products.html">Products</a>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-            <!-- .site-navigation -->
-
-            <div class="hamburger-menu d-lg-none">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <!-- .hamburger-menu -->
-          </div>
-          <!-- .col -->
+          /></a>
         </div>
-        <!-- .row -->
+        <!-- .site-branding -->
+
+        <nav
+                class="site-navigation d-flex justify-content-end align-items-center"
+        >
+          <ul
+                  class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center"
+          >
+            <li >
+              <a href="index.html">Home</a>
+            </li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li class="current-menu-item"><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- .site-navigation -->
+
+        <div class="hamburger-menu d-lg-none">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- .hamburger-menu -->
       </div>
-      <!-- .container -->
+      <!-- .col -->
     </div>
-    <!-- .nav-bar -->
+    <!-- .row -->
+  </div>
+  <!-- .container -->
+</div>
+<!-- .nav-bar -->
 
-    <!-- PRODUCT SECTION -->
-    <section class="container product-section section-margin section-padding">
-      <h1 class="text-center mb-4 pb-4">Our Products</h1>
-      <div
-        id="filter-buttons"
-        class="btn-group d-flex justify-content-end mb-4"
-        role="group"
-      >
-        <button class="btn btn-active" onclick="filter('all')">All</button>
-        <button class="btn" onclick="filter('label1')">Label 1</button>
-        <button class="btn" onclick="filter('label2')">Label 2</button>
-        <button class="btn" onclick="filter('label3')">Label 3</button>
+<!-- Main Container -->
+<section class="container section-padding section-margin">
+  <div class="row">
+    <div class="col-md-3 col-sm-12">
+      <h3 class="buttongroup-title">DiYALİZ GRUBU</h3>
+      <div class="buttongroup d-flex flex-column">
+        <button class="btn active">Haber 1</button>
+        <button class="btn">Haber 2</button>
+        <button class="btn">Haber 3</button>
       </div>
-      <div id="products" class="row">
-        <div class="product-label label1 col-12 col-md-4 col-lg-3 mb-4">
-          <div class="product card border-radius">
-            <img
-              class="card-img-top border-radius-top"
-              src="images/news-2.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-              </p>
-            </div>
-            <div class="card-footer border-radius-bottom">
-              <p class="card-text">
-                <small class="text-muted">Label 1</small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="product-label label2 col-12 col-md-4 col-lg-3 mb-4">
-          <div class="product card border-radius">
-            <img
-              class="card-img-top border-radius-top"
-              src="images/news-2.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-              </p>
-            </div>
-            <div class="card-footer border-radius-bottom">
-              <p class="card-text">
-                <small class="text-muted">Label 2</small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="product-label label1 col-12 col-md-4 col-lg-3 mb-4">
-          <div class="product card border-radius">
-            <img
-              class="card-img-top border-radius-top"
-              src="images/news-2.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-              </p>
-            </div>
-            <div class="card-footer border-radius-bottom">
-              <p class="card-text">
-                <small class="text-muted">Label 1</small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="product-label label2 col-12 col-md-4 col-lg-3 mb-4">
-          <div class="product card border-radius">
-            <img
-              class="card-img-top border-radius-top"
-              src="images/news-2.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-              </p>
-            </div>
-            <div class="card-footer border-radius-bottom">
-              <p class="card-text">
-                <small class="text-muted">Label 2</small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="product-label label3 col-12 col-md-4 col-lg-3 mb-4">
-          <div class="product card border-radius">
-            <img
-              class="card-img-top border-radius-top"
-              src="images/news-2.png"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-              </p>
-            </div>
-            <div class="card-footer border-radius-bottom">
-              <p class="card-text">
-                <small class="text-muted">Label 3</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav aria-label="Page navigation example">
-        <ul id="pagination" class="pagination justify-content-center">
-          <li class="page-item">
-            <a class="page-link" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link btn-active">1</a>
-          </li>
-          <li class="page-item"><a class="page-link">2</a></li>
-          <li class="page-item">
-            <a class="page-link" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+    </div>
+    <!-- Sidebar Col end -->
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="footer-widgets">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="foot-about">
-                <h2>
-                  <a href="#"
-                    ><img
+    <div class="offset-md-1 col-md-8 col-sm-12">
+      <h2 class="blog-title mb-4">ÜRÜN BAŞLIĞI</h2>
+      <div class="mb-4">
+        <img class="img-fluid" src="images/about.jpg" />
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat. Maecenas nibh dolor, malesuada et bibendum a, sagittis accumsan ipsum. Pellentesque ultrices ultrices sapien.</p>
+    </div>
+    <!-- Content Col end -->
+  </div>
+  <!-- Main row end -->
+</section>
+<!-- Main container end -->
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-widgets">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="foot-about">
+            <h2>
+              <a href="#"
+              ><img
                       class="d-block"
                       src="images/logo.png"
                       alt="logo"
                       width="250pv"
-                  /></a>
-                </h2>
+              /></a>
+            </h2>
 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  malesuada lorem maximus mauris scelerisque, at rutrum nulla
-                  dictum. Ut ac ligula sapien.
-                </p>
-              </div>
-              <!-- .foot-about -->
-            </div>
-            <!-- .col -->
-
-            <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-              <div class="foot-contact">
-                <h2>Contact</h2>
-
-                <ul class="p-0 m-0">
-                  <li>
-                    <span>Address:</span>Sancak Mah. Konrad Adenauer Cad.
-                    523.Sok. No:1/2 Çankaya/Ankara
-                  </li>
-                  <li><span>Phone:</span>0 312 236 3649</li>
-                  <li><span>Email:</span>info@lenagrup.com.tr</li>
-                </ul>
-              </div>
-            </div>
-            <!-- .col -->
-
-            <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-              <div class="foot-links">
-                <h2>Useful Links</h2>
-
-                <ul class="p-0 m-0">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About us</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="products.html">Products</a></li>
-                </ul>
-              </div>
-              <!-- .foot-links -->
-            </div>
-            <!-- .col -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              malesuada lorem maximus mauris scelerisque, at rutrum nulla
+              dictum. Ut ac ligula sapien.
+            </p>
           </div>
-          <!-- .row -->
+          <!-- .foot-about -->
         </div>
-        <!-- .container -->
-      </div>
-      <!-- .footer-widgets -->
-    </footer>
-    <!-- .site-footer -->
+        <!-- .col -->
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="js/circle-progress.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.min.js"></script>
-    <script type="text/javascript" src="js/jquery.barfiller.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-  </body>
+        <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+          <div class="foot-contact">
+            <h2>Contact</h2>
+
+            <ul class="p-0 m-0">
+              <li>
+                <span>Address:</span>Sancak Mah. Konrad Adenauer Cad.
+                523.Sok. No:1/2 Çankaya/Ankara
+              </li>
+              <li><span>Phone:</span>0 312 236 3649</li>
+              <li><span>Email:</span>info@lenagrup.com.tr</li>
+            </ul>
+          </div>
+        </div>
+        <!-- .col -->
+
+        <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+          <div class="foot-links">
+            <h2>Useful Links</h2>
+
+            <ul class="p-0 m-0">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="products.html">Products</a></li>
+            </ul>
+          </div>
+          <!-- .foot-links -->
+        </div>
+        <!-- .col -->
+      </div>
+      <!-- .row -->
+
+    </div>
+    <!-- .footer-widgets -->
+</footer>
+<!-- .site-footer -->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/circle-progress.min.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.min.js"></script>
+<script type="text/javascript" src="js/jquery.barfiller.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- Slick Slider
+<script src="plugins/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+-->
+</body>
 </html>
