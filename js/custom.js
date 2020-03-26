@@ -1,63 +1,3 @@
-function filter(c) {
-  let x = document.getElementsByClassName("product-label");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (let i = 0; i < x.length; i++) {
-    addClass(x[i], "d-none");
-    if (x[i].className.indexOf(c) > -1) removeClass(x[i], "d-none");
-  }
-}
-function pagination() {
-  let x = document.getElementsByClassName("product-label");
-  console.log(x);
-}
-// Show filtered elements
-function addClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-// Hide elements that are not selected
-function removeClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-var btnContainer = document.getElementById("filter-buttons");
-if (btnContainer) {
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("btn-active");
-      current[0].className = current[0].className.replace(" btn-active", "");
-      this.className += " btn-active";
-    });
-  }
-}
-
-// var paginationContainer = document.getElementById("pagination");
-// if (paginationContainer) {
-//   var btns = paginationContainer.getElementsByTagName("a");
-//   for (var i = 0; i < btns.length; i++) {
-//     btns[i].addEventListener("click", function() {
-//       var current = document.getElementsByClassName("btn-active");
-//       current[0].className = current[0].className.replace(" btn-active", "");
-//       this.className += " btn-active";
-//     });
-//   }
-// }
-
 (function($) {
   // 'use strict';
 
@@ -76,29 +16,6 @@ if (btnContainer) {
     $(".nav-bar").addClass("nav-bar-scrolled");
     $(".nav-bar").addClass("shadow-lg");
   }
-
-  // Products
-
-  let elements = document.getElementsByClassName("product-label");
-  for (let i = 0; i < elements.length; i++) {
-    if (i < 1 * 4 && i >= (1 - 1) * 4) {
-      removeClass(elements[i], "d-none");
-    } else {
-      addClass(elements[i], "d-none");
-    }
-  }
-
-  $(".page-link").on("click", function() {
-    let pageNumber = parseInt($(this).text());
-
-    for (let i = 0; i < elements.length; i++) {
-      if (i < pageNumber * 4 && i >= (pageNumber - 1) * 4) {
-        removeClass(elements[i], "d-none");
-      } else {
-        addClass(elements[i], "d-none");
-      }
-    }
-  });
 
   // Main Navigation
   $(".hamburger-menu").on("click", function() {
