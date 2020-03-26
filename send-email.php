@@ -1,6 +1,8 @@
 <?php
 if(isset($_POST['email'])) {
- 
+    
+    echo "ASDASDASD"
+
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "furkanatasoy65@gmail.com";
     $email_subject = "Contact Lena Grup";
