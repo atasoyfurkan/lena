@@ -22,4 +22,5 @@ mx-2
 animasyonlar eklenecek 
     anasayfa
     filtreleme ekrani
-    
+
+
