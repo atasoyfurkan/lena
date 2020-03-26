@@ -316,16 +316,12 @@ a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   background-image: url(images/kalite-belgeleri.jpg);
   padding-top: 70px;
   padding-bottom: 70px;
 }
-.kalite-footer overlay {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+
 
 .kalite-footer {
   margin-top: 50px;
