@@ -468,6 +468,8 @@ a:active {
   height: 70vh;
 }
 
+
+
 .hero-slider .slider-item {
   height: 70vh;
   display: flex !important;
@@ -478,6 +480,21 @@ a:active {
   background-size: cover;
   position: relative;
 }
+
+.hero-slider .bright {
+
+}
+
+.hero-slider .bright:before {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1)!important;
+  content: "";
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
 
 .hero-slider .slider-item:before {
   position: absolute;
