@@ -23,7 +23,7 @@ product a slider eklenecek
 
 mail php duzeltilecek
 
-kalite belgeleri ayarlanacak 
+//kalite belgeleri ayarlanacak 
 
 
 animasyonlar eklenecek 
