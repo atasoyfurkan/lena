@@ -253,6 +253,14 @@ a:active {
 .site-navigation ul li.current-menu-item a {
   color: #29367c;
 }
+@media screen and (max-width: 768px) {
+  .site-navigation ul li a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-weight: 650;
+  }
+}
 
 /*--------------------------------------------------------------
 # Home Section
