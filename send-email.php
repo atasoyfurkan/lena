@@ -79,6 +79,12 @@ if($status) {
 else {
     echo "FAIL";
 }
-}
 ?>
  
+<!-- include your own success html here -->
+ Thank you for contacting us. We will be in touch with you very soon.
+ 
+<?php
+ 
+}
+?>
