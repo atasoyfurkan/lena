@@ -12,15 +12,20 @@ navbar mobil sidebar duzenlenecek
 //cok kucuk ekranda body kayiyor
 
 
-home section altina layer
+//home section altina layer
 
-#29367c
+//#29367c
 
 
-mx-2 
+//mx-2 
+
+product a slider eklenecek
+
+mail php duzeltilecek
+
+kalite belgeleri ayarlanacak 
+
 
 animasyonlar eklenecek 
     anasayfa
     filtreleme ekrani
-
-

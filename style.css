@@ -322,7 +322,6 @@ a:active {
   padding-bottom: 70px;
 }
 
-
 .kalite-footer {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -352,6 +351,7 @@ a:active {
 
 .service-section {
   position: relative;
+  margin-bottom: 50px;
 }
 
 .service-section .section-title h3 {
@@ -1996,6 +1996,8 @@ ul.tabs-nav .tab-nav.active {
   cursor: pointer;
 }
 .buttongroup .btn {
+  background-color: rgba(221, 221, 221);
+  color: black;
   text-align: left;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -2018,6 +2020,11 @@ ul.tabs-nav .tab-nav.active {
   color: black;
   font-size: 28px;
 }
+@media screen and (max-width: 768px) {
+  .blog {
+    margin-top: 70px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -2025,7 +2032,7 @@ ul.tabs-nav .tab-nav.active {
 .site-footer {
   position: relative;
   padding: 48px 0;
-  background: url("images/footer-bgB.png") no-repeat center #F8F8F8;
+  background: url("images/footer-bgB.png") no-repeat center #f8f8f8;
   background-size: cover;
   font-size: 14px;
   color: #828282;
