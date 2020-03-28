@@ -2013,7 +2013,7 @@ ul.tabs-nav .tab-nav.active {
   cursor: pointer;
 }
 .buttongroup .btn {
-  background-color: rgba(221, 221, 221) !important;
+  background-color: #f4f4f4;
   color: black;
   text-align: left;
   padding-top: 15px;
