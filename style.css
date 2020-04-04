@@ -395,10 +395,11 @@ a:active {
   margin-top: 30px;
 }
 
+
 .service-section .items-container .slick-prev:before,
 .service-section .items-container .slick-next:before {
   font-size: 25px;
-  color: #48bdc5;
+  color: #29367c;
 }
 
 .service-section .items-container .item {
@@ -603,7 +604,127 @@ a:active {
   content: "\f178";
   font-family: "FontAwesome";
 }
+/*--------------------------------------------------------------
+# Pro Slider
+ ------------------------------------------------------------*/
+.pro-slider {
+  height: 70vh;
+}
 
+.pro-slider .slider-item {
+  height: 70vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.pro-slider .content {
+  position: relative;
+  z-index: 2;
+}
+
+.pro-slider .content.style h2 {
+  font-size: 60px;
+}
+
+@media (max-width: 767px) {
+  .pro-slider .content.style h2 {
+    font-size: 30px;
+  }
+  .pro-slider .slider-item {
+    text-align: center !important;
+  }
+  .pro-slider .slider-item h2 {
+    text-align: center !important;
+  }
+  .pro-slider .slider-item p {
+    text-align: center !important;
+  }
+  .pro-slider .slider-item a {
+    float: none !important;
+  }
+}
+
+.pro-slider .content.style .offer-text {
+  letter-spacing: 7px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.pro-slider .content.style .tag-text {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.pro-slider .content.style .btn-main {
+  border-radius: 3px;
+  padding: 16px 50px;
+  font-weight: 700;
+}
+
+.pro-slider .content h2 {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.pro-slider .content p {
+  font-size: 26px;
+  color: #fff;
+}
+
+.pro-slider .content .btn-white {
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.pro-slider .content .btn-white:hover {
+  background: #fff;
+  color: #000;
+}
+
+.pro-slider .slick-dots {
+  bottom: 20px;
+}
+
+.pro-slider .slick-dots li {
+  margin: 0 3px;
+}
+
+.pro-slider .slick-dots li button:before {
+  font-size: 15px;
+}
+
+.pro-slider .slick-dots li.slick-active button:before {
+  color: #29367c;
+}
+
+.pro-slider .slick-prev {
+  left: 20px;
+  z-index: 100;
+}
+
+.pro-slider .slick-prev:before {
+  color: #29367c;
+}
+
+.pro-slider .slick-next {
+  right: 20px;
+  z-index: 100;
+}
+
+.pro-slider .slick-next:before {
+  color: #29367c;
+}
 /*--------------------------------------------------------------
 # Feature Section
 --------------------------------------------------------------*/
@@ -2084,6 +2205,9 @@ ul.tabs-nav .tab-nav.active {
   font-weight: 500;
 }
 
+.foot-contact h2 {
+  color: #29367c;
+}
 .foot-contact ul {
   list-style: none;
 }

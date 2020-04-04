@@ -103,6 +103,25 @@
 		wow.init();
 	}
 
+	// Pro Slider
+	$('.pro-slider').slick({
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		infinite: true,
+		speed: 300,
+		dots: true,
+		arrows: true,
+		fade: true,
+		responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					arrows: false
+				}
+			}
+		]
+	});
 	// Hero Slider
 	$('.hero-slider').slick({
 		slidesToShow: 1,
