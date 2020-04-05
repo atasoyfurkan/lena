@@ -8,7 +8,7 @@ if(isset($_POST['email'])) {
  
     function died($error) {
         // your error code can go here
-        echo "Üzgünüz. Girilen bilgiler hatalı.";
+        echo "Girilen bilgiler hatalı.<br />";
         echo "Hatalar:<br /><br />";
         echo $error."<br /><br />";
         die();
@@ -73,7 +73,7 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 $status = mail($email_to, $email_subject, $email_message, $headers);  
 if($status) {
-    echo "Gönderildi";
+    echo "İletişime geçtiğiniz için teşekkür ederiz. En kısa sürede yardımcı olacağız.";
 }
 else {
     echo "HATA! Gönderilemedi.";
@@ -81,7 +81,6 @@ else {
 ?>
  
 <!-- include your own success html here -->
- İletişime geçtiğiniz için teşekkür ederiz. En kısa sürede yardımcı olacağız.
  
 <?php
  
