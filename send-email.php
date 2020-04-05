@@ -8,10 +8,9 @@ if(isset($_POST['email'])) {
  
     function died($error) {
         // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
+        echo "Üzgünüz. Girilen bilgiler hatalı.";
+        echo "Hatalar:<br /><br />";
         echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
         die();
     }
  
@@ -22,7 +21,7 @@ if(isset($_POST['email'])) {
         !isset($_POST['subject']) ||
         !isset($_POST['message'])
         ) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+        died('Eksik bilgi.');       
     }
  
      
@@ -36,17 +35,17 @@ if(isset($_POST['email'])) {
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
   if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= 'Geçersiz e-posta adresi<br />';
   }
  
     $string_exp = "/^[A-Za-z .'-]+$/";
  
   if(!preg_match($string_exp,$name)) {
-    $error_message .= 'The Name you entered does not appear to be valid.<br />';
+    $error_message .= 'Geçersiz isim<br />';
   }
  
   if(!preg_match($string_exp,$subject)) {
-    $error_message .= 'The Subject you entered does not appear to be valid.<br />';
+    $error_message .= 'Geçersiz konu<br />';
   }
  
   if(strlen($error_message) > 0) {
@@ -74,15 +73,15 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 $status = mail($email_to, $email_subject, $email_message, $headers);  
 if($status) {
-    echo "Success";
+    echo "Gönderildi";
 }
 else {
-    echo "FAIL";
+    echo "HATA! Gönderilemedi.";
 }
 ?>
  
 <!-- include your own success html here -->
- Thank you for contacting us. We will be in touch with you very soon.
+ İletişime geçtiğiniz için teşekkür ederiz. En kısa sürede yardımcı olacağız.
  
 <?php
  
