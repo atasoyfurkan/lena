@@ -8,8 +8,8 @@ if(isset($_POST['email'])) {
  
     function died($error) {
         // your error code can go here
-        echo "Girilen bilgiler hatalı.<br />";
-        echo "Hatalar:<br /><br />";
+        echo "Girilen bilgiler hatalı.<br /><br />";
+        echo "Hatalar:<br />";
         echo $error."<br /><br />";
         die();
     }
