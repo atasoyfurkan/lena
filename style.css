@@ -2028,6 +2028,7 @@ ul.tabs-nav .tab-nav.active {
   padding: 30px 0;
 }
 
+
 .contact-info ul {
   list-style: none;
   font-size: 14px;
@@ -2119,6 +2120,10 @@ ul.tabs-nav .tab-nav.active {
 @media screen and (max-width: 768px) {
   .contact-page-map iframe {
     height: 300px;
+  }
+  .contact-text-info {
+    text-align: justify !important;
+    font-size: 20px !important;
   }
 }
 
