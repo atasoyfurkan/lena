@@ -318,6 +318,9 @@ a:active {
   }
   .home-section p {
     text-align: justify !important;
+  }  
+  .belge img {
+    max-height: 107px;
   }
 }
 
@@ -329,6 +332,7 @@ a:active {
   opacity: 0.7;
   cursor: pointer;
 }
+
 
 /*--------------------------------------------------------------
 # Product Section
