@@ -504,7 +504,7 @@ a:active {
 }
 
 .hero-slider .content.style h2 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 @media (max-width: 767px) {
@@ -2170,6 +2170,13 @@ ul.tabs-nav .tab-nav.active {
   line-height: 36px;
   color: black;
   font-size: 28px;
+}
+.blog p {
+  text-align: justify;
+}
+.blog .subtitle {
+  font-size: 18px;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .blog {
