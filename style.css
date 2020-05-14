@@ -283,6 +283,7 @@ a:active {
   color: #fff;
 
   min-height: 500px;
+  margin-top: 110px;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -311,7 +312,6 @@ a:active {
 }
 
 @media screen and (max-width: 768px) {
-
   .overlay {
     background: rgba(255, 255, 255, 0.6);
   }
@@ -319,6 +319,8 @@ a:active {
   .home-section-content {
     align-items: center !important;
     text-align: center !important;
+    padding-bottom: 30px;
+    padding-top: 20px;
   }
   .home-section p {
     text-align: justify !important;
