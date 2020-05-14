@@ -1,87 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>İletişim</title>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <title>İletişim</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="single-page">
-    <!-- NAVBAR -->
-    <div class="nav-bar position-fixed">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="single-page">
+  <!-- NAVBAR -->
+  <div class="nav-bar position-fixed">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+          <div class="site-branding d-flex align-items-center">
+            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"
+                width="250pv" /></a>
+          </div>
+          <!-- .site-branding -->
+
+          <nav class="site-navigation d-flex justify-content-end align-items-center">
+            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+              <li>
+                <i class="d-md-none fas fa-home"></i>
+                <a href="index.html">Anasayfa</a>
+              </li>
+              <li>
+                <i class="d-md-none fas fa-info-circle"></i>
+                <a href="about.html">Hakkımızda</a>
+              </li>
+              <li>
+                <i class="d-md-none fas fa-briefcase-medical"></i>
+                <a href="products.html">Ürünler</a>
+              </li>
+              <li>
+                <i class="d-md-none fas fa-newspaper"></i>
+                <a href="blog.html">Diyabetle Yaşam</a>
+              </li>
+              <li class="current-menu-item">
+                <i class="d-md-none fas fa-envelope"></i>
+                <a href="contact.html">İletişim</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- .site-navigation -->
+
+          <div class="hamburger-menu d-lg-none">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- .hamburger-menu -->
+        </div>
+        <!-- .col -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .container -->
+  </div>
+  <!-- .nav-bar -->
+
+  <div class="contact-page-short-boxes section-margin">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <img class="responsive" src="images/guncel/İletişim.png"
+            style="max-width: 100%; border-radius: 25px; margin-bottom: 25px;" />
+          <p class="contact-text-info" style="font-size: x-large; font-family: Arial;">
+            <b>Adres:</b> Sancak Mah. Konrad Adenauer Cad. 523.Sok. No:1/2
+            Çankaya/Ankara<br />
+            <b>Telefon:</b> 0 312 236 3649<br />
+            <b>E-mail:</b> info@lenagrup.com.tr
+          </p>
+        </div>
+        <div class="contact-form">
+          <div class="container">
+            <form name="contact" target="_blank" method="post" action="send-email.php">
+              <div class="row">
+                <div class="col-12" style="text-align: center;">
+                  <h2>Bir sorunuz mu var?</h2>
+                </div>
+                <div class="col-12 col-md-4">
+                  <input name="name" type="text" placeholder="İsim" />
+                </div>
+                <div class="col-12 col-md-4">
+                  <input name="email" type="email" placeholder="E-mail" />
+                </div>
+                <div class="col-12 col-md-4">
+                  <input name="subject" type="text" placeholder="Konu" />
+                </div>
+                <div class="col-12">
+                  <textarea name="message" rows="12" cols="80" placeholder="Nasıl yardımcı olabiliriz?"></textarea>
+                </div>
+                <div class="col-12" style="text-align: center;">
+                  <input type="submit" value="Gönder" class="button gradient-bg" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 15px; text-align: center;">
+        <h2>Harita</h2>
+      </div>
+      <div class="col-12">
+        <div class="contact-page-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.371582402366!2d32.85959831537924!3d39.865913879433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d345730313f2ef%3A0xb7e63162ebbd0984!2sSancak%2C%20523.%20Sk.%20No%3A1%2C%2006550%20%C3%87ankaya%2FAnkara!5e0!3m2!1sen!2str!4v1585231578046!5m2!1sen!2str"
+            width="800" height="600" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <!-- map -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-widgets">
       <div class="container">
         <div class="row">
-          <div
-            class="col-12 d-flex flex-wrap justify-content-between align-items-center"
-          >
-            <div class="site-branding d-flex align-items-center">
-              <a class="d-block" href="index.html" rel="home"
-                ><img
-                  class="d-block"
-                  src="images/logo.png"
-                  alt="logo"
-                  width="250pv"
-              /></a>
-            </div>
-            <!-- .site-branding -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="foot-about">
+              <h2>
+                <a href="#"><img class="d-block" src="images/logo.png" alt="logo" width="250pv" /></a>
+              </h2>
 
-            <nav
-              class="site-navigation d-flex justify-content-end align-items-center"
-            >
-              <ul
-                class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center"
-              >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                malesuada lorem maximus mauris scelerisque, at rutrum nulla
+                dictum. Ut ac ligula sapien.
+              </p>
+            </div>
+            <!-- .foot-about -->
+          </div>
+          <!-- .col -->
+
+          <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0"></div>
+          <!-- .col -->
+
+          <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+            <div class="foot-contact">
+              <b>
+                <h2>İletişim</h2>
+              </b>
+
+              <ul class="p-0 m-0">
                 <li>
-                  <i class="d-md-none fas fa-home"></i>
-                  <a href="index.html">Anasayfa</a>
+                  <span>Adres:</span> Sancak Mah. Konrad Adenauer Cad.
+                  523.Sok. No:1/2 Çankaya/Ankara
                 </li>
-                <li>
-                  <i class="d-md-none fas fa-info-circle"></i>
-                  <a href="about.html">Hakkımızda</a>
-                </li>
-                <li>
-                  <i class="d-md-none fas fa-briefcase-medical"></i>
-                  <a href="products.html">Ürünler</a>
-                </li>
-                <li>
-                  <i class="d-md-none fas fa-newspaper"></i>
-                  <a href="blog.html">Diyabetle Yaşam</a>
-                </li>
-                <li class="current-menu-item">
-                  <i class="d-md-none fas fa-envelope"></i>
-                  <a href="contact.html">İletişim</a>
-                </li>
+                <li><span>Telefon:</span>0 312 236 3649</li>
+                <li><span>E-mail:</span>info@lenagrup.com.tr</li>
               </ul>
-            </nav>
-            <!-- .site-navigation -->
-
-            <div class="hamburger-menu d-lg-none">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
-            <!-- .hamburger-menu -->
+            <!-- .foot-links -->
           </div>
           <!-- .col -->
         </div>
@@ -89,152 +183,17 @@
       </div>
       <!-- .container -->
     </div>
-    <!-- .nav-bar -->
+    <!-- .footer-widgets -->
+  </footer>
+  <!-- .site-footer -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="js/circle-progress.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.min.js"></script>
+  <script type="text/javascript" src="js/jquery.barfiller.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
 
-    <div class="contact-page-short-boxes section-margin">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-4">
-            <img
-              class="responsive"
-              src="images/ContactUs.png"
-              style="max-width: 100%; border-radius: 25px; margin-bottom: 25px;"
-            />
-            <p class="contact-text-info" style="font-size: x-large; font-family: Arial;">
-              <b>Adres:</b> Sancak Mah. Konrad Adenauer Cad. 523.Sok. No:1/2
-              Çankaya/Ankara<br />
-              <b>Telefon:</b> 0 312 236 3649<br />
-              <b>E-mail:</b> info@lenagrup.com.tr
-            </p>
-          </div>
-          <div class="contact-form">
-            <div class="container">
-              <form
-                name="contact"
-                target="_blank"
-                method="post"
-                action="send-email.php"
-              >
-                <div class="row">
-                  <div class="col-12" style="text-align: center;">
-                    <h2>Bir sorunuz mu var?</h2>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <input name="name" type="text" placeholder="İsim" />
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <input name="email" type="email" placeholder="E-mail" />
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <input name="subject" type="text" placeholder="Konu" />
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      name="message"
-                      rows="12"
-                      cols="80"
-                      placeholder="Nasıl yardımcı olabiliriz?"
-                    ></textarea>
-                  </div>
-                  <div class="col-12" style="text-align: center;">
-                    <input
-                      type="submit"
-                      value="Gönder"
-                      class="button gradient-bg"
-                    />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-12" style="margin-bottom: 15px; text-align: center;">
-          <h2>Harita</h2>
-        </div>
-        <div class="col-12">
-          <div class="contact-page-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.371582402366!2d32.85959831537924!3d39.865913879433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d345730313f2ef%3A0xb7e63162ebbd0984!2sSancak%2C%20523.%20Sk.%20No%3A1%2C%2006550%20%C3%87ankaya%2FAnkara!5e0!3m2!1sen!2str!4v1585231578046!5m2!1sen!2str"
-              width="800"
-              height="600"
-              frameborder="0"
-              style="border: 0;"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
-          <!-- map -->
-        </div>
-      </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="footer-widgets">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="foot-about">
-                <h2>
-                  <a href="#"
-                    ><img
-                      class="d-block"
-                      src="images/logo.png"
-                      alt="logo"
-                      width="250pv"
-                  /></a>
-                </h2>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  malesuada lorem maximus mauris scelerisque, at rutrum nulla
-                  dictum. Ut ac ligula sapien.
-                </p>
-              </div>
-              <!-- .foot-about -->
-            </div>
-            <!-- .col -->
-
-            <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0"></div>
-            <!-- .col -->
-
-            <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
-              <div class="foot-contact">
-                <b><h2>İletişim</h2></b>
-
-                <ul class="p-0 m-0">
-                  <li>
-                    <span>Adres:</span> Sancak Mah. Konrad Adenauer Cad.
-                    523.Sok. No:1/2 Çankaya/Ankara
-                  </li>
-                  <li><span>Telefon:</span>0 312 236 3649</li>
-                  <li><span>E-mail:</span>info@lenagrup.com.tr</li>
-                </ul>
-              </div>
-              <!-- .foot-links -->
-            </div>
-            <!-- .col -->
-          </div>
-          <!-- .row -->
-        </div>
-        <!-- .container -->
-      </div>
-      <!-- .footer-widgets -->
-    </footer>
-    <!-- .site-footer -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="js/circle-progress.min.js"></script>
-    <script type="text/javascript" src="js/jquery.countTo.min.js"></script>
-    <script type="text/javascript" src="js/jquery.barfiller.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-  </body>
 </html>
