@@ -743,17 +743,18 @@ a:active {
 # Feature Section
 --------------------------------------------------------------*/
 
-.col-lg-5ths {
+.col-5ths {
   position: relative;
   min-height: 1px;
   padding-right: 10px;
   padding-left: 10px;
 }
-@media (min-width: 1200px) {
-  .col-lg-5ths {
+@media (min-width: 768px) {
+  .col-5ths {
     width: 20%;
     float: left;
   }
+}
   .single-feature {
     background: #f9f9fd;
     border-radius: 5px;
@@ -779,7 +780,7 @@ a:active {
     font-weight: 400;
     color: #777777;
   }
-}
+
 
 /*--------------------------------------------------------------
 # Elements Page
