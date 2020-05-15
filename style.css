@@ -377,6 +377,21 @@ a:active {
 .kalite-footer .btn:hover {
   opacity: 0.7;
 }
+.kalite-hak {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.kalite-hak .btn {
+  cursor:default!important;
+  background-color: #29367c;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 23px;
+  font-weight: 700;
+  border-radius: 15px;
+}
+
 .urun {
   transition: all 0.3s ease-in;
   opacity: 0;
@@ -1733,6 +1748,7 @@ ul.tabs-nav .tab-nav.active {
 .med-history .bottom-service {
   display: flex;
 }
+
 @media screen and (max-width: 992px) {
   .med-history {
     padding: 0px 0;
