@@ -45,7 +45,7 @@ img {
 }
 
 .section-padding-bot{
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 @media screen and (max-width: 768px) {
   .section-margin {
@@ -1736,7 +1736,7 @@ ul.tabs-nav .tab-nav.active {
     padding: 0px 0;
   }
   .med-history .top-service {
-    display: block;
+    display: flex;
     margin-bottom: 15px;
   }
 
