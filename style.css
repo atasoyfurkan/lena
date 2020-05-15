@@ -381,16 +381,6 @@ a:active {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.kalite-hak .btn {
-  cursor:default!important;
-  background-color: #29367c;
-  color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 23px;
-  font-weight: 700;
-  border-radius: 15px;
-}
 
 .urun {
   transition: all 0.3s ease-in;
