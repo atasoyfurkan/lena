@@ -126,9 +126,9 @@
 	$('.hero-slider').slick({
 		slidesToShow: 1,
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 3000,
 		infinite: true,
-		speed: 300,
+		speed: 700,
 		dots: true,
 		arrows: true,
 		fade: true,
@@ -146,8 +146,10 @@
 		infinite: true,
 		arrows: true,
 		autoplay: true,
+		autoplaySpeed: 3000,
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		speed: 700,
 		responsive: [
 			{
 				breakpoint: 991,
