@@ -291,6 +291,7 @@ a:active {
 
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 70%;
 }
 
 .home-section-content {
@@ -319,6 +320,7 @@ a:active {
   .overlay {
     background: rgba(255, 255, 255, 0.6);
   }
+
   .home-section h1 {
     margin: 0;
     font-size: 40px;
