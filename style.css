@@ -506,6 +506,10 @@ a:active {
 .hero-slider {
   height: 70vh;
 }
+.hero-slider .vertical_center {
+  display: flex;
+  align-items: center;
+}
 
 .hero-slider .slider-item {
   height: 70vh;
@@ -540,18 +544,12 @@ a:active {
   .hero-slider .content.style h2 {
     font-size: 30px;
   }
-  .hero-slider .slider-item {
-    text-align: center !important;
+  .hero-slider .content.style .tag-text-s {
+    font-size: 15px!important;
+    font-weight: normal;
   }
-  .hero-slider .slider-item h2 {
-    text-align: center !important;
-  }
-  .hero-slider .slider-item p {
-    text-align: center !important;
-  }
-  .hero-slider .slider-item a {
-    float: none !important;
-  }
+
+
 }
 
 .hero-slider .content.style .offer-text {
@@ -561,6 +559,10 @@ a:active {
 }
 
 .hero-slider .content.style .tag-text {
+  font-size: 20px;
+  font-weight: normal;
+}
+.hero-slider .content.style .tag-text-s {
   font-size: 20px;
   font-weight: normal;
 }
