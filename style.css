@@ -597,12 +597,12 @@ a:active {
 
 .incele {
   width: 100%; 
-  position: absolute; 
-  bottom:70px
+  position: relative; 
+  bottom:10px
 }
 @media (max-width: 767px) {
   .incele {
-    bottom:50px
+    bottom:10px
   }
   .content.style {
     text-align: center;
