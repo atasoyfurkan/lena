@@ -595,6 +595,19 @@ a:active {
   transition: all 0.3s ease;
 }
 
+.incele {
+  width: 100%; 
+  position: absolute; 
+  bottom:70px
+}
+@media (max-width: 767px) {
+  .incele {
+    bottom:50px
+  }
+  .content.style {
+    text-align: center;
+  }
+}
 .hero-slider .content .btn-white:hover {
   background: #fff;
   color: #000;
